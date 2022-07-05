@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore CSS</title>
     <style>
+      .green{
+        background-color: darkgreen;
+      }
+      .small{
+       background-color: chartreuse;
+       font-size: 30px;
+      }
+
       h2 {
         color: blue;
         height: 80px;
@@ -17,7 +25,6 @@
       }
       p {
         color: rgba(119, 17, 215, 0.906);
-        background-color: rgb(245, 234, 112);
        }
       i {
         color: #008080;
@@ -34,8 +41,19 @@
      #mn{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
      }
-
+     #pink{
+      background-color: pink;
+      border: 9px solid red;
+      margin-left: 110px;
+      padding: 20px 60px 100px 10px;
+    }
+    #auto{
+      border: 8px dotted red;
+      margin: 0 auto;
+      text-align: center;
+     }
      /* declar class */
+    
      .ok{
         font-style:italic;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,17 +62,61 @@
         background-color: aqua;
         width: 50%;
       }
+        /* border css */
+      .yellow{
+        background-color: yellow;
+        border: 9px solid red;
+        border-radius: 24px;
+        margin: 20px 10px 70px 100px;
+      }
+      /* inside yellow class only for paragraph tag */
+      .yellow p{
+        font-style: italic;
+        font-weight:600;
+      }
+      .align {
+        text-align:right;
+      }
+      
     </style>
   </head>
   <body>
     <i class="ok">internal Css</i>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ab quis aspernatur explicabo exercitationem est dolores tempore sequi nihil iste porro suscipit, accusamus cumque ipsam natus excepturi perferendis consequuntur voluptatem.
+    <!-- border -->
+ <div class="yellow">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestias nam iure aspernatur laborum? Porro, eligendi cumque ducimus ad deserunt ex voluptatum? Culpa vero harum asperiores minima quos, cumque laborum.
     </p>
-    <h2 class="backcolor">East delta University</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem dolor vero nihil quam, repellendus cumque architecto dicta possimus aperiam fugiat commodi ullam illum reprehenderit corporis officiis, accusamus qui id inventore.
+    </p>
+  </div>
+  <div class="yellow">
+      <p class="align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum neque beatae maxime eligendi, voluptas, molestiae quos, modi temporibus accusamus animi? Sapiente mollitia eius libero illo molestias distinctio! Placeat, tenetur?
+      </p>
+  
+ </div>
+ <!-- border end -->
+   <div class="green ">
+    <b>eikhane ghebla ase 
+    </b>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur, debitis dolorem quia expedita facilis nulla qui culpa voluptatibus eaque voluptatem aspernatur fugiat numquam sint commodi pariatur maiores fugit. Ullam.
+      </p>
+      <p>What is SPAN tag?
+        The <span> tag is an inline container used to mark up a part of a text, or a part of a document. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribut.
+      </p>
+      <u>fbdbgfdsbgksghbbgibg</u><br><br>
+      <b>eikhane ghebla ase 
+      </b>
+   </div>
+   <!-- margine AUTO -->
+    <p id="auto">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="small"> repellat quis natus illum veritatis odio tenetur provident temporibus hic ratione, quidem amet id suscipit deserunt dicta officia unde.</span> Ullam ab quis aspernatur explicabo exercitationem est dolores tempore sequi nihil iste porro suscipit, accusamus cumque ipsam natus excepturi perferendis consequuntur voluptatem.
+    </p>
+    <h2 class="backcolor align">East delta University</h2>
     <h4>CSE</h4>
    <h3 id="fn">syeda</h3>
    <h3 id="mn">sirajum</h3>
    <h3 class="ok backcolor">MUNIRA</h3>
+   <p id="pink">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic voluptatibus aliquid sapiente est explicabo earum cum saepe quo exercitationem reprehenderit? Suscipit esse accusantium maiores dicta ipsa unde tempore quisquam delectus.</p>
   </body>
 </html>
